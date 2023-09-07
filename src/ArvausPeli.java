@@ -6,6 +6,7 @@ public class ArvausPeli {
 		
 		Scanner in = new Scanner(System.in);
 		int i = 0;
+		int j = 0;
 		boolean win = false;
 		String guess;
 		String nimi="Emma";
@@ -18,15 +19,15 @@ public class ArvausPeli {
 				
 				
 			
-				if(!guess.equals("Emma")) {
-					for(int j=0; j<=nimi.length(); j++) {
-						
-						System.out.println("Kirjain " + j + nimi.charAt(j));
-						
+				if(i <= 4) {
+					System.out.println((i)+ ". Kirjain." + nimi.charAt(j));	
+					j++;
 					}
+				
+				
 					
 					
-				}
+				
 			
 			
 				if (guess.equals("Emma")) {
@@ -40,8 +41,7 @@ public class ArvausPeli {
 					System.out.println("You guessed " + i + " times.");
 					break;
 				}
-
+		}
 	}
 
-}
 }
