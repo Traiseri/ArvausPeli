@@ -8,6 +8,7 @@ public class ArvausPeli {
 		int i = 0;
 		boolean win = false;
 		String guess;
+		String nimi="Emma";
 		
 		while (win==false) {
 				
@@ -15,11 +16,24 @@ public class ArvausPeli {
 			guess =in.nextLine();
 			i++;
 				
+				
+			
+				if(!guess.equals("Emma")) {
+					for(int j=0; j<=nimi.length(); j++) {
+						
+						System.out.println("Kirjain " + j + nimi.charAt(j));
+						
+					}
+					
+					
+				}
+			
+			
 				if (guess.equals("Emma")) {
 					win = true;
 					System.out.println("Congratulations!");
 					System.out.println("You guessed " + i + " times.");
-					
+						
 				}
 				else if (guess.equals("stop")){
 					i--;
